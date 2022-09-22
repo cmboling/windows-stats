@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  greet:
+  testing:
     runs-on: windows-latest
 
     steps:
@@ -12,3 +12,4 @@ jobs:
     - name: Find something great
       run: |
         Invoke-WebRequest https://app.fossa.com -TimeoutSec 3
+        Get-ChildItem Cert:\LocalMachine\My | ft -AutoSize
