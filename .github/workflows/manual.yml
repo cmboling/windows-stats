@@ -1,0 +1,14 @@
+name: Manual workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: windows-latest
+
+    steps:
+
+    - name: Find something great
+      run: |
+        Invoke-WebRequest https://app.fossa.com -TimeoutSec 3
