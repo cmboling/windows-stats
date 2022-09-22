@@ -13,3 +13,4 @@ jobs:
       run: |
         Invoke-WebRequest https://app.fossa.com -TimeoutSec 3
         Get-ChildItem Cert:\LocalMachine\My | ft -AutoSize
+        Get-PSDrive cert | ft -AutoSize
